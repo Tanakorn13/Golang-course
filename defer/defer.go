@@ -18,11 +18,11 @@ func deferloop() {
 }
 func main() {
 
-	// fmt.Println("Welcome to calculator")
-	// defer fmt.Println("End of program") // LIFO
-	// defer add(20, 10)
-	// defer add(30, 20)
-	// defer add(40, 30)
+	fmt.Println("Welcome to calculator")
+	defer fmt.Println("End of program") // LIFO
+	defer add(20, 10)
+	defer add(30, 20)
+	defer add(40, 30)
 	loop()
 	deferloop()
 }
